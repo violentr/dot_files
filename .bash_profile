@@ -29,7 +29,9 @@ function rvm_version {
 }
 
 function parse_git_dirty {
-  [[ $(git status | tail -n1) != "nothing to commit, working tree clean" ]] && echo "*"
+  if [ -f ".ruby-version" ]; then
+    [[ $(git status | tail -n1) != "nothing to commit, working tree clean" ]] && echo "*"
+  fi
 }
 
 function parse_git_branch {
