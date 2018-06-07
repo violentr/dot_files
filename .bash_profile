@@ -14,6 +14,10 @@ export EDITOR=vim
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
 function rvm_version {
     local gemset=$(echo $GEM_HOME | awk -F'@' '{print $2}' | tr a-z A-Z)
     [ "$gemset" != "" ] && gemset="$gemset" 
