@@ -3,6 +3,8 @@ export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 alias ls='ls -GFh'
 alias ll='ls -lA'
+
+cd $HOME/dot_files
 . ./aliases.sh
 . ./.inputrc
 
@@ -13,8 +15,8 @@ export EDITOR=vim
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 #bash completion, usage git branch re + Tab
-if [ -f ~/.git-completion.bash ]; then
-  . ~/.git-completion.bash
+if [ -f $HOME/.git-completion.bash ]; then
+  . $HOME/.git-completion.bash
 fi
 
 function rvm_version {
