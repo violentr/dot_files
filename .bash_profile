@@ -3,9 +3,9 @@ export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 alias ls='ls -GFh'
 alias ll='ls -lA'
-
 . ~/.profile
 . ~/aliases.sh
+. ./.inputrc
 cd ~/Desktop/Repository
 
 export BUNDLE_EDITOR=vim
