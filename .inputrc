@@ -1,3 +1,2 @@
-set editing-mode vi
 set history-size 1500
 set completion-ignore-case on
