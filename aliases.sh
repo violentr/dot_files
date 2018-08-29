@@ -138,3 +138,4 @@ alias pu=pushd
 alias rd=rmdir
 alias rvm-restart='rvm_reload_flag=1 source '\''/home/tsl-dev/.rvm/scripts/rvm'\'
 alias which-command=whence
+alias gdiff="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
