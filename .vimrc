@@ -12,3 +12,6 @@ call pathogen#helptags() "generate helptags for everything in ‘runtimepath’
 map <C-n> :NERDTreeToggle<CR>
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+let mapleader = "\\"
+nnoremap <leader>r :!rspec %<cr>
+nnoremap <leader>R :!rspec <cr>
