@@ -1,0 +1,12 @@
+#copy it to your $HOME dir
+#rename it to .bash_profile
+
+cd $HOME/dot_files
+echo "Load custom .bash_profile"
+. ./.bash_profile
+
+cd $HOME/Desktop/Repository/selfserve/gui
+# test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+source /Users/den/.evm/scripts/evm
+export PATH="/usr/local/opt/openssl/bin:$PATH"
