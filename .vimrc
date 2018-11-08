@@ -16,3 +16,4 @@ let mapleader = "\\"
 nnoremap <leader>r :!rspec %<cr>
 nnoremap <leader>R :!rspec <cr>
 inoremap jk <Esc>
+set hlsearch
