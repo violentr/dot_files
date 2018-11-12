@@ -16,5 +16,6 @@ let mapleader = "\\"
 nnoremap <leader>r :!rspec %<cr>
 nnoremap <leader>R :!rspec <cr>
 inoremap jk <Esc>
+autocmd BufEnter *.py set ai sw=4 ts=4 sta et fo=croql
 set hlsearch
 set cursorline
