@@ -21,6 +21,9 @@ nnoremap <leader>R :!rspec <cr>
 inoremap ;; <Esc>
 
 autocmd FileType python map <buffer> <F3> :call Flake8()<CR>
+autocmd FileType * set tabstop=2|set shiftwidth=2|set noexpandtab
+"Python settings
+autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
 "autocmd BufEnter *.py set ai sw=4 ts=4 sta et fo=croql
 
 set hlsearch
