@@ -143,3 +143,6 @@ alias gmerged='git branch --merged | grep -v "\*" | grep -v master | grep -v dev
 
 # press <K> on a commit hash
 alias gvim="git log | vim -R -"
+
+alias gstat="git show --stat --oneline"
+alias diff="colordiff"
