@@ -1,3 +1,6 @@
+set statusline=2
+set statusline=Filename:%t\ Line:\ %l\ Col:\ %c
+
 set syntax=ruby
 hi Search ctermbg=cyan
 hi Search ctermfg=black
