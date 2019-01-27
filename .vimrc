@@ -1,3 +1,8 @@
+"To convert to tabs Ctrl + W + T
+
+nnoremap <C-J> :tabnext<CR>
+nnoremap <C-K> :tabprevious<CR>
+
 set statusline=2
 set statusline=Filename:%t\ Line:\ %l\ Col:\ %c
 
