@@ -1,3 +1,7 @@
+set syntax=ruby
+hi Search ctermbg=cyan
+hi Search ctermfg=black
+set background=dark
 syntax on
 set tabstop=2
 set shiftwidth=2
