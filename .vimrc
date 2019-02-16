@@ -3,8 +3,9 @@
 nnoremap <C-J> :tabnext<CR>
 nnoremap <C-K> :tabprevious<CR>
 
-set statusline=2
-set statusline=Filename:%t\ Line:\ %l\ Col:\ %c
+set laststatus=2
+set statusline=%{expand('%:p:h:t')/%F
+"set statusline+=|Line:\ %l\ Col:\ %c
 
 set syntax=ruby
 hi Search ctermbg=cyan
