@@ -33,6 +33,9 @@ nnoremap <leader>r :!rspec %<cr>
 nnoremap <leader>R :!rspec <cr>
 inoremap ;; <Esc>
 
+"git-blame.vim
+noremap <Leader>gb :<C-u>call gitblame#echo()<CR>
+
 autocmd FileType python map <buffer> <F3> :call Flake8()<CR>
 autocmd FileType * set tabstop=2|set shiftwidth=2|set noexpandtab
 "Python settings
