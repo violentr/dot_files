@@ -146,3 +146,4 @@ alias gvim="git log | vim -R -"
 
 alias gstat="git show --stat --oneline"
 alias diff="colordiff"
+alias t='tmux'
