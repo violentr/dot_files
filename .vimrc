@@ -4,7 +4,13 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 set number
+set tags=./tags;
 
+"Create tabs
+nnoremap <C-J> :tabnext<CR>
+nnoremap <C-K> :tabprevious<CR>
+nnoremap <C-t> :tabnew<CR>
+nnoremap <C-x> :tabclose<CR>
 autocmd BufWritePre * %s/\s\+$//e
 filetype plugin indent on
 
@@ -19,7 +25,7 @@ nnoremap <leader>R :!rspec <cr>
 "git-blame.vim
 nnoremap <Leader>gb :<C-u>call gitblame#echo()<CR>
 
-inoremap ;; <Esc>
+inoremap jj <Esc>
 set hlsearch
 set cursorline
 augroup filetype javascript syntax=javascript
