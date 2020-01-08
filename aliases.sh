@@ -149,3 +149,4 @@ alias diff="colordiff"
 alias t='tmux'
 alias ctags="`brew --prefix`/bin/ctags"
 alias jtags="ctags -R app config lib && sed -i '' -E '/^(if|switch|function|module\.exports|it|describe).+language:js$/d' tags"
+alias be="bundle exec"
