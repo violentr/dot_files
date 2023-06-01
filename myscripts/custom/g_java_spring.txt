@@ -1,0 +1,26 @@
+ grep -ERi --exclude-dir="test" "(Get|Post|Delete|Put)Mapping\(" src/main/java
+ grep -ERi --exclude-dir="test" "@Rest[a-z]src/main/java*" src/main/java
+ grep -ERi --exclude-dir="test" -A1 "@Component" src/main/java
+ grep -ERi --exclude-dir="test" -A1 "@Primary" src/main/java
+ grep -ERi --exclude-dir="test" "@PropertySource" src/main/java
+ grep -EoRi --exclude-dir="test" "@v1[a-zA-z].*" src/main/java
+ grep -ERi --exclude-dir="test" "@Value\(" src/main/java
+ grep -ERi --exclude-dir="test" "@Repository" src/main/java
+ grep -EoRi --exclude-dir="test" "@Service" src/main/java
+ grep -EoRi --exclude-dir="test" "@Controller" src/main/java
+ grep -EoRi --exclude-dir="test" "@Autowired" src/main/java
+ grep -EoRi --exclude-dir="test" "@Qualifier" src/main/java
+ grep -EoRi --exclude-dir="test" "@Scope\(" src/main/java
+ grep -EoRi --exclude-dir="test" "@ComponentScan" src/main/java
+ grep -EoRi --exclude-dir="test" "@PostConstruct" src/main/java
+ grep -EoRi --exclude-dir="test" "@PreDestroy" src/main/java
+ grep -EoRi --exclude-dir="test" "@Configuration" src/main/java
+ grep -EoRi --exclude-dir="test" "SecurityContext" src/main/java
+ grep -EoRi --exclude-dir="test" "@[a-z]{1,100}" src/main/java
+grep -EoRi --exclude-dir="test" "@SpringBootApplication|@GetMapping|@RequestMapping|@RequestParam|@RequiredArgsConstructor|@RestController|@UtilityClass|@ViewerPermission|@DeleteMapping|@PathVariable|@PostMapping|@RequestBody|@RuleEditorPermission|@Valid|@PageableDefault|@RequestHeader|@Slf|@ApproverPermission|@Deprecated|@PreAuthorize|@PutMapping|@RequesterPermission|@Getter|@Builder|@Data|@NotBlank|@NotNull|@IterableMapping|@Mapper|@Named|@Component|@AfterMapping|@Autowired|@Mapping|@MappingTarget|@AllArgsConstructor|@Service|@Override|@Endpoint|@ReadOperation|@Selector|@Configuration|@ConfigurationProperties|@Setter|@SuppressWarnings|@Bean|@JsonEnumDefaultValue|@EqualsAndHashCode|@ValidCanonicalWalletGroupTemplate|@Import|@Min|@Validated|@Value|@EnableScheduling|@Retention|@Target|@Transactional|@interface|@EnableJpaRepositories|@EnableTransactionManagement|@Filter|@Qualifier|@ComponentScan|@EnableJpaAuditing|@Primary|@QuartzDataSource|@NoRepositoryBean|@JsonFormat|@ExceptionHandler|@RestControllerAdvice|@NoArgsConstructor|@SuperBuilder|@Accessors|@SneakyThrows|@ToString|@TransactionalPlatform|@DecimalMin|@EnableGlobalMethodSecurity|@EnableWebSecurity|@ConditionalOnProperty|@EventListener|@Scheduled|@NotEmpty|@Converter|@Column|@Entity|@GeneratedValue|@Id|@JoinColumn|@ManyToOne|@OneToOne|@SQL|@Table|@Where|@Audited|@EntityListeners|@MappedSuperclass|@Version|@Cache|@Cacheable|@Enumerated|@OneToMany|@PrePersist|@PreUpdate|@CreatedDate|@LastModifiedDate|@NamedAttributeNode|@NamedEntityGraph|@NamedSubgraph|@RevisionEntity|@RevisionNumber|@RevisionTimestamp|@Convert|@return|@Query|@Param|@Repository|@Modifying|@EntityGraph|@Constraint|@Documented" src/main/java
+grep -ERi --exclude-dir="test" "select [a-z]{2,100}.* \+" .
+grep -ERi --exclude-dir="test" "Secure" .
+find . -name "*\.properties" 2>/dev/null
+find ./src -name "*.xml" 2>/dev/null
+grep -ERi --exclude-dir="test" "\+ .* \"' .*" src/main/
+grep -ERi --exclude-dir="test" "@Value\(\"\W\{[a-z].*" src/main

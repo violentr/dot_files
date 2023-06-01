@@ -1,0 +1,42 @@
+grep -EoRni --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt "window(\.\w{1,20}){1,5}" .
+grep -ERni --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt "document\.write|writeln" .
+grep -ERn --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt "document\.(\w.*)?\(\)" .
+grep -EoRn --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt "([A-Z]{1,100}_[A-Z]{1,100}){1,10}" .
+grep -ERn --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt "process\.env" .
+grep -ERnw --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt ".*\.innerHTML" .
+grep -ERnw --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt ".*\.outerHTML" .
+grep -ERni --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt ".*\.onevent" .
+grep -ERni --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt ".*\.on[A-Z].*" .
+grep -ERnw --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt "eval\(.*" .
+grep -ERn --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt "XMLHttpRequest" .
+grep -ERn --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt "\.withCredentials" .
+grep -ERni --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt "unescape\(encodeURIComponent\(" .
+grep -ERni --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt "auth" .
+grep -ERni --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt "headers" .
+grep -ERni --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt "Access-" .
+grep -ERni --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt "Cache-" .
+grep -ERni --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt "csrf" .
+grep -ERni --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt "require\(" .
+grep -ERni --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt "exports(\s)?=" .
+grep -ERni --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt "crypt" .
+grep -ERni --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt "content-type" .
+grep -ERni --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt "cookie" .
+grep -ERn --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt "localStorage" .
+grep -ERn --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt "lodash" .
+grep -ERn --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt "sha(1|256|512)" .
+grep -ERn --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt "iglu:com\..*" .
+grep -ERn --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt "(\/\w.*\/){1,4}" .
+grep -ERn --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt "new RegExp\(\"" .
+grep -ERn --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt "JSON\.parse\(" .
+grep -ERn --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt "\w.*:(\s.*)?function" .
+grep -ERn --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt "function (\w.*)?\(\)" .
+grep -ERn --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt "async function (\w.*)?\((\w.*)?\)" .
+grep -ERn --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt "throw (new)?([A-Za-z].*)?" .
+grep -ERn --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt "\.replace\(" .
+grep -ERn --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt "application(\/)?" .
+grep -ERn --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt "referrer|whitelist|blacklist" .
+grep -ERn --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt "javascript|vbscript|jscript|mocha|livescript|ecmascript|mailto" .
+grep -ERni --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt "request(\.)?" .
+grep -ERni --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt "http(s)?:\/\/\w.*\"" .
+grep -ERni --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt "app\.\w.*\(" .
+grep -EoRni --exclude-dir={node_modules,bower_components} --exclude={output,g_javascript,code_review\*}.txt "pug|haml|hbs|squirrelly|eta|combyne|nunjucks|marko|whiskers|blade|express-hbs|express-handlebars|express-views-dom|twing|express-tl|sprightly" .
